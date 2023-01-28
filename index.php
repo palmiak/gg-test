@@ -1,7 +1,10 @@
 <?php
 $api_key = '47ecd3b21be71c5822571b9f59e52544';
 // Create connection
-$conn = new mysqli('localhost', 'myusername', '7FHKEPt5D2zAUI2');
+$username = 'palmiak';
+$host = 'localhost';
+$password = '7FHKEPt5D2zAUI2';
+$conn = new mysqli($host, $username, $password);
 
 // Check connection
 if ($conn->connect_error) {
